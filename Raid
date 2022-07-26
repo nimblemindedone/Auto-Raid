@@ -574,8 +574,8 @@ game:GetService("Players").LocalPlayer.PlayerGui.Chat.Frame.ChatChannelParentFra
                                     **Item Name**: ]] .. items,
                                 ["color"] = tonumber(0xcfd9de);
                                 ["footer"] = {
-                                    ["text"] = "RPG Simulator - Zen X";
-                                    ["icon_url"] = "https://cdn.discordapp.com/attachments/626185393707941889/940776650700914708/228-2280201_transparent-zen-circle-png-zen-circle-png-png-removebg-preview-removebg-preview.png"; -- The image icon you want your footer to have
+                                    ["text"] = "RPG Simulator";
+                                    ["icon_url"] = "https://static.wikia.nocookie.net/rpg-simulator/images/a/ac/Shade-1.png/revision/latest/scale-to-width-down/350?cb=20200508054807"; -- The image icon you want your footer to have
                                 };
                                 ["timestamp"] = DateTime.now():ToIsoDate();
                                 

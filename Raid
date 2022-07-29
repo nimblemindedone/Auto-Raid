@@ -471,7 +471,7 @@ end
 local startTime = tick()
 game.StarterGui:SetCore("SendNotification", {
 Title = "Discord";
-Text = "the discord is https://discord.com/invite/mwfAyYZ57P";
+Text = "";
 Duration = math.huge;
 })
 
@@ -481,10 +481,10 @@ end))
 
 coroutine.resume(coroutine.create(function()
     while wait(1) do
-        if (doautoskill or getgenv().settings['autoskill']['autoskill1']) and not workspace:FindFirstChild('W1') and not workspace:FindFirstChild('QuestNPCs') then
-            VirtualInputManager:SendKeyEvent(true, "Q", false, game)
+        if (doautoskill or getgenv().settings['autoskill']['autoskill3']) and not workspace:FindFirstChild('W1') and not workspace:FindFirstChild('QuestNPCs') then
+            VirtualInputManager:SendKeyEvent(true, "R", false, game)
             wait()
-            VirtualInputManager:SendKeyEvent(false, "Q", false, game)
+            VirtualInputManager:SendKeyEvent(false, "R", false, game)
         end
         wait()
         if (doautoskill or getgenv().settings['autoskill']['autoskill2']) and not workspace:FindFirstChild('W1') and not workspace:FindFirstChild('QuestNPCs') then
@@ -493,10 +493,10 @@ coroutine.resume(coroutine.create(function()
             VirtualInputManager:SendKeyEvent(false, "E", false, game)
         end
         wait()
-        if (doautoskill or getgenv().settings['autoskill']['autoskill3']) and not workspace:FindFirstChild('W1') and not workspace:FindFirstChild('QuestNPCs') then
-            VirtualInputManager:SendKeyEvent(true, "R", false, game)
+        if (doautoskill or getgenv().settings['autoskill']['autoskill1']) and not workspace:FindFirstChild('W1') and not workspace:FindFirstChild('QuestNPCs') then
+            VirtualInputManager:SendKeyEvent(true, "Q", false, game)
             wait()
-            VirtualInputManager:SendKeyEvent(false, "R", false, game)
+            VirtualInputManager:SendKeyEvent(false, "Q", false, game)
         end
     end
 end))

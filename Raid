@@ -487,16 +487,16 @@ coroutine.resume(coroutine.create(function()
             VirtualInputManager:SendKeyEvent(false, "R", false, game)
         end
         wait()
-        if (doautoskill or getgenv().settings['autoskill']['autoskill2']) and not workspace:FindFirstChild('W1') and not workspace:FindFirstChild('QuestNPCs') then
-            VirtualInputManager:SendKeyEvent(true, "E", false, game)
-            wait()
-            VirtualInputManager:SendKeyEvent(false, "E", false, game)
-        end
-        wait()
         if (doautoskill or getgenv().settings['autoskill']['autoskill1']) and not workspace:FindFirstChild('W1') and not workspace:FindFirstChild('QuestNPCs') then
             VirtualInputManager:SendKeyEvent(true, "Q", false, game)
             wait()
             VirtualInputManager:SendKeyEvent(false, "Q", false, game)
+        end
+        wait()
+        if (doautoskill or getgenv().settings['autoskill']['autoskill2']) and not workspace:FindFirstChild('W1') and not workspace:FindFirstChild('QuestNPCs') then
+            VirtualInputManager:SendKeyEvent(true, "E", false, game)
+            wait()
+            VirtualInputManager:SendKeyEvent(false, "E", false, game)
         end
     end
 end))
